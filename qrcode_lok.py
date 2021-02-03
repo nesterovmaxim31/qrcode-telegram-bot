@@ -1,6 +1,6 @@
-from pyzbar import pyzbar
 import cv2
 import os
+from pyzbar import pyzbar
 
 
 async def qrcode_loker(user_id):
