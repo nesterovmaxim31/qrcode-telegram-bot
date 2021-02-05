@@ -3,8 +3,8 @@ import os
 from pyzbar import pyzbar
 
 
-async def qrcode_loker(user_id):
-    img = cv2.imread(f"test{user_id}.JPG")
+def qrcode_loker(user_id):
+    img = cv2.imread(f"test{user_id}.jpg")
     code = pyzbar.decode(img)
     D = 0
     for h in code:
