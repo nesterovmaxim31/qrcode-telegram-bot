@@ -1,11 +1,11 @@
 import cv2
 import os
-from pyzbar.pyzbar import decode
+from pyzbar import pyzbar
 
 
 async def qrcode_loker(user_id):
     img = cv2.imread(f"test{user_id}.JPG")
-    code = decode(img)
+    code = pyzbar.decode(img)
     D = 0
     for h in code:
         D = h.data.decode("utf-8")
