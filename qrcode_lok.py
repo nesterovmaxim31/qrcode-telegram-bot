@@ -1,6 +1,7 @@
 import cv2
 import os
 from pyzbar import pyzbar
+import qrcode
 
 
 def qrcode_loker(user_id):
@@ -14,6 +15,11 @@ def qrcode_loker(user_id):
                " масимально точность"
     else:
         return D
+
+
+async def create(text, user_id):
+    qrcode_img = qrcode.make(text)
+    qrcode_img.save(f"form{user_id}.jpg")
 
 
 async def delete_file_photo_user(user_id):
