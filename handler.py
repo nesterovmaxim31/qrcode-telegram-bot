@@ -13,7 +13,8 @@ async def process_hi6_command(message: Message):
     await bot.send_message(chat_id=message.chat.id, text=f"Привет {message.from_user.first_name},"
                                                          f" я бот умеющий работать с qrcode,\n"
                                                          "что бы расшифрофать qrcode, пришлите мне его фото\n"
-                                                         "что бы создать qrcode, просто введите требуемый текст")
+                                                         "что бы создать qrcode, просто введите требуемый текст или"
+                                                         " ссылку")
 
 
 @db.message_handler(content_types=['photo'])
