@@ -25,3 +25,8 @@ async def create(text, user_id):
 async def delete_file_photo_user(user_id):
     path = os.path.join(os.path.abspath(os.path.dirname(__file__)), f'test{user_id}.jpg')
     os.remove(path)
+
+
+async def delete_file_photo_user_2(user_id):
+    path = os.path.join(os.path.abspath(os.path.dirname(__file__)), f'form{user_id}.jpg')
+    os.remove(path)
