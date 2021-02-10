@@ -21,7 +21,6 @@ async def process_hi6_command(message: Message):
 async def handle_docs_photo(message: Message):
     await message.photo[0].download(f'test{message.from_user.id}-{message["message_id"]}.jpg')
     await bot.send_message(message.from_user.id, text=f"Ожидайте результат...")
-    # await bot.send_message(message.from_user.id, text=f"{qrcode_loker(message.from_user.id, message['message_id'])}")
     await message.reply(f"{qrcode_loker(message.from_user.id, message['message_id'])}")
 
 
