@@ -1,7 +1,7 @@
 from app import bot, db
 from aiogram.types import Message
 from config import admin_id
-from qrcode_lok import qrcode_loker, create, delete_file_photo_user_2
+from qrcode_lok import qrcode_loker, create, delete_file_photo_user_2, delete_file_photo_user
 
 
 async def send_to_admin(db):
