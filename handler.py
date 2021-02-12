@@ -10,11 +10,11 @@ async def send_to_admin(db):
 
 @db.message_handler(commands=["start"])
 async def process_hi6_command(message: Message):
-    await bot.send_message(chat_id=message.chat.id, text=f"Привет {message.from_user.first_name},"
+    await bot.send_message(chat_id=message.chat.id, text=f"Привет {message.from_user.first_name + message.from_user.last_name},"
                                                          f" я бот умеющий работать с qrcode,\n"
                                                          "что бы расшифрофать qrcode, пришлите мне его фото\n"
                                                          "что бы создать qrcode, просто введите требуемый текст или"
-                                                         " ссылку")
+                                                         " ссылку\nПочта: workmaksim041@gmail.com\n@maxforfuture")
 
 
 @db.message_handler(content_types=['photo'])
