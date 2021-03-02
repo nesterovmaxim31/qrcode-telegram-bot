@@ -5,7 +5,7 @@ from qrcode_lok import qrcode_loker, create, delete_file_photo_user_2, delete_fi
 
 
 async def send_to_admin(db):
-    await bot.send_message(chat_id=admin_id, text="вроде работает и это уже четвёртый")
+    await bot.send_message(chat_id=admin_id, text="вроде работает и это уже четвёртый 02.03")
 
 
 @db.message_handler(commands=["start"])
