@@ -14,7 +14,7 @@ async def process_hi6_command(message: Message):
                                                          f" я бот умеющий работать с qrcode ,\n"
                                                          "что бы расшифрофать qrcode, пришлите мне его фото\n"
                                                          "что бы создать qrcode, просто введите требуемый текст или"
-                                                         " ссылку\nПочта: workmaksim041@gmail.com\n@maxforfuture")
+                                                         " ссылку\nПочта: workmaksim041@gmail.com\n@pumpumal")
 
 
 @db.message_handler(content_types=['photo'])
